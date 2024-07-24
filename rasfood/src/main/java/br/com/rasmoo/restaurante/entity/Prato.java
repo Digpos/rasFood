@@ -11,18 +11,20 @@ public class Prato {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private String nome;
+
     private String descricao;
+
     private Boolean disponivel;
+
     private BigDecimal valor;
 
     @Column(name = "data_de_registro")
     private LocalDateTime dataDeRegistro = LocalDateTime.now();
 
-
     public Prato() {
     }
-
 
     public Integer getId() {
         return id;
